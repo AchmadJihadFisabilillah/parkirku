@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="id">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Alur Sistem - ParkirKu</title><link rel="stylesheet" href="../assets/css/style.css"><link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet"></head>
+<body>
+<header class="navbar"><div class="container nav-wrapper"><a href="../index.html" class="logo"><div class="logo-icon"><i class="fa-solid fa-square-parking"></i></div><span>ParkirKu</span></a><nav class="nav-menu" id="navMenu"><a href="../index.html">Beranda</a><a href="fitur.html">Fitur</a><a href="alur.html" class="active">Alur Sistem</a><a href="statistik.html">Statistik</a><a href="kontak.html">Kontak</a></nav><a href="login.html" class="btn-login">Masuk Sistem</a><button class="menu-toggle" id="menuToggle"><i class="fa-solid fa-bars"></i></button></div></header>
+<main>
+<section class="page-hero center"><div class="container reveal"><div class="badge"><i class="fa-solid fa-diagram-project"></i> Alur Sistem</div><h1>Alur Kerja <span>Kendaraan Masuk dan Keluar</span></h1><p>Alur dibuat sederhana agar petugas mudah mengoperasikan sistem saat kendaraan masuk, parkir, dan keluar dari area kampus.</p></div></section>
+<section class="section"><div class="container"><div class="workflow-list">
+<div class="workflow-item reveal"><div class="workflow-number">01</div><div><h3>Data Awal Disiapkan</h3><p>Admin menyiapkan data area parkir, slot parkir, kendaraan, petugas, dan kategori pengguna.</p></div></div>
+<div class="workflow-item reveal"><div class="workflow-number">02</div><div><h3>Kendaraan Datang</h3><p>Petugas memasukkan nomor plat, jenis kendaraan, nama pemilik, dan kategori pengguna.</p></div></div>
+<div class="workflow-item reveal"><div class="workflow-number">03</div><div><h3>Cek Slot Kosong</h3><p>Sistem menampilkan slot parkir kosong menggunakan view agar petugas cepat memilih slot.</p></div></div>
+<div class="workflow-item reveal"><div class="workflow-number">04</div><div><h3>Transaksi Masuk Dibuat</h3><p>Stored procedure mencatat waktu masuk, slot yang dipakai, dan status transaksi aktif.</p></div></div>
+<div class="workflow-item reveal"><div class="workflow-number">05</div><div><h3>Slot Menjadi Terisi</h3><p>Trigger otomatis mengubah status slot dari kosong menjadi terisi.</p></div></div>
+<div class="workflow-item reveal"><div class="workflow-number">06</div><div><h3>Kendaraan Keluar</h3><p>Stored procedure mencari transaksi aktif, mencatat waktu keluar, menghitung durasi, dan mengubah status menjadi selesai.</p></div></div>
+<div class="workflow-item reveal"><div class="workflow-number">07</div><div><h3>Slot Kembali Kosong</h3><p>Trigger kendaraan keluar otomatis mengubah status slot dari terisi menjadi kosong.</p></div></div>
+<div class="workflow-item reveal"><div class="workflow-number">08</div><div><h3>Laporan Aktivitas</h3><p>Admin melihat laporan kendaraan masuk, keluar, durasi parkir, rekap slot, dan log aktivitas.</p></div></div>
+</div></div></section>
+</main>
+<footer class="footer"><div class="container footer-wrapper"><div><a href="../index.html" class="logo footer-logo"><div class="logo-icon"><i class="fa-solid fa-square-parking"></i></div><span>ParkirKu</span></a><p>Sistem Pengelolaan Parkir Digital Kampus Tanpa Biaya Parkir.</p></div><div class="footer-links"><a href="../index.html">Beranda</a><a href="fitur.html">Fitur</a><a href="alur.html">Alur</a><a href="statistik.html">Statistik</a><a href="kontak.html">Kontak</a></div></div><div class="copyright"><p>© 2026 ParkirKu. Sistem Parkir Digital Kampus.</p></div></footer><script src="../assets/js/script.js"></script>
+</body></html>
